@@ -1,0 +1,25 @@
+
+body{
+    font-family: "Forum", serif;
+    background-color: aliceblue;
+    
+    a{
+        text-decoration: none;
+    }
+
+    
+        height: 100vh;
+        display: grid;
+        grid-auto-rows: auto;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        grid-template-areas: 
+       
+        "cabeza"
+        "main"
+        "footer"
+        
+        
+        ;
+    
+}

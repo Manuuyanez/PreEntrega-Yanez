@@ -1,0 +1,1373 @@
+@import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* a{
+    text-decoration: none;
+}
+
+body{
+    font-family: "Forum", serif;
+    background-color: aliceblue;
+} */
+
+
+/* .grid_container{
+    height: 100vh;
+    display: grid;
+    grid-auto-rows: auto;
+    grid-column: 1fr ;
+    gap: 10px;
+    grid-template-areas: 
+    "header"
+    "main  "
+    "footer"
+    
+    
+    ;
+} */
+
+
+/* este header es para reutilizar el grid en todas las paginas */
+
+/* .header_container{
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-auto-rows: 0.5fr 1fr;
+    grid-template-areas: 
+    "headerinfo "
+    "navbarpro  "
+    
+    ;
+} */
+
+
+/* .main_container{
+    grid-area: main;
+} */
+
+.footer__container{
+    grid-area: footer;
+}
+
+
+
+/* .header__info{
+    grid-area: headerinfo;
+    background-color: black;
+    text-align: center;
+
+} */
+
+/* .header__info p{
+    color: white;
+    font-weight: 700;
+    padding: 5px 25px 5px 0;
+    margin-bottom: 0px;
+    
+    
+} */
+
+/* .descuento{
+    font-weight: 900;
+    color: pink;
+} */
+
+
+
+/* .navbar__pro{
+
+    grid-area: navbarpro;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+} */
+
+/* .navbar__pro a {
+    color: black;
+  
+    
+} */
+
+/* .navbar-logo{
+    display: flex;
+    align-items: center;
+} */
+
+/* .navbar-logo img{
+    height: 70px;
+    margin-right: 20px;
+    
+} */
+
+/* .navbar-logo span{
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: black;
+} */
+
+/* .navbar__nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: end;
+    
+} */
+
+/* El comando usado abajo (>*) a todos los elementos que esten adentro de navbar, se le van a aplicar todos los estilos que le demos */
+
+/* .navbar__nav>*{
+    margin-left: 40px;
+} */
+
+/* .nav__list{
+    display: flex;
+    list-style: none;
+} */
+
+/* .nav__link{
+    margin-left: 40px;
+    font-size: 1.1rem;
+    font-weight: 500;
+} */
+
+/* .nav__link a{
+    color: black;
+} */
+
+/* .search__icon img {
+
+    height: 30px;
+    width: 30px;
+
+} */
+
+
+/* .main_container{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    grid-template-areas:
+    "banner"
+    "infobody"
+    "ofertabody"
+    
+    ;
+} */
+
+/* .banner__container{
+    grid-area: banner;
+    
+    
+
+} */
+
+/* .banner__container img{
+    width: 100%;
+    height: auto;
+    display: block;
+} */
+
+
+
+/* .info__body{
+    grid-area: infobody;
+    background-color: white;
+    margin-top: 5px;
+    padding: 5px;
+} */
+
+
+/* .container__info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: min-content;
+    grid-template-areas: 
+    "info1 info2 info3 info4"
+    
+    ;
+    
+} */
+
+/* .info1{
+    grid-area: info1;
+}
+
+.info2{
+    grid-area: info2;
+}
+
+.info3{
+    grid-area: info3;
+}
+
+.info4{
+    grid-area: info4;
+} */
+
+
+
+/* .info__img{
+    height: 60px;
+    margin: 10px;
+} */
+
+/* .info__item{
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px;
+    margin: 5px;
+    
+} */
+
+
+
+/* .info__item a {
+    display: flex;
+    align-items: center;
+    color: black;
+    margin: 10px;
+    font-weight: 900;
+} */
+
+
+
+/* .ofertas__body{
+    grid-area: ofertabody;
+    margin: 20px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: auto;
+    grid-template-areas: 
+    "ofertaimg oferta1 oferta2 oferta3 oferta4"
+    
+    ;
+
+} */
+
+
+
+/* .oferta__img img {
+    height: 300px;
+    grid-area: ofertaimg;
+    
+} */
+
+/* .oferta1{
+    grid-area: oferta1;
+
+}
+
+.oferta2{
+    grid-area: oferta2;
+    
+}
+
+.oferta3{
+    
+    grid-area: oferta3;
+}
+
+.oferta4{
+
+    grid-area: oferta4;
+    
+} */
+
+
+
+/* .ofertas__item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+} */
+
+/* .ofertas__item a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    margin: 10px;
+    font-size: 20px;
+} */
+
+/* .ofertas__item a img{
+    height: 200px;
+    margin: 10px;
+    
+} */
+
+/* .ofertas__btn{
+    background-color: blue;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 5px;
+} */
+
+
+/* .footer__container{
+    
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    grid-template-areas: 
+        "redes redes"
+        "info  info" 
+        "copyr copyr"   
+    ;
+} */
+
+.redes__email{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: grey;
+    grid-area: redes;
+    
+}
+
+
+/* .redes__email h3 {
+    color: white;
+    margin: 20px;
+    font-weight: 900;
+} */
+
+/* .form__email{
+    margin: 20px;
+    
+} */
+
+/* .email__btn{
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 5px;
+
+} */
+
+/* .iconos__redes a img{
+    height: 60px;
+    margin: 20px;
+} */
+
+/* .info__footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 10px;
+    grid-area: info;
+    background-color: black;
+} */
+
+
+/* .categorias__footer{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+} */
+
+/* .categorias__footer h3{
+    color: white;
+    margin-bottom: 10px;
+} */
+
+/* .categorias__footer a{
+    color: white;
+    margin: 5px;
+} */
+
+/* .marcas__footer{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+
+} */
+
+/* .marcas__footer h3 {
+    color: white;
+    margin-bottom: 10px;    
+} */
+
+/* .marcas__footer a{
+    color: white;
+    margin: 5px;
+} */
+
+
+/* .ayuda__footer{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+} */
+
+/* .ayuda__footer h3{
+    color: white;
+    margin-bottom: 10px;
+} */
+
+
+/* .ayuda__footer a{
+    color: white;
+    margin: 5px;
+} */
+
+/* .contacto__footer{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+} */
+
+/* .contacto__footer h3{
+    color: white;
+    margin-bottom: 10px;
+} */
+
+/* .contacto__footer p{
+    color: white;
+    margin: 5px;
+} */
+
+/* .copy{
+    background-color: aliceblue;
+    padding: 20px;
+    grid-area: copyr;
+}
+
+.copy p{
+    font-weight: 900;
+} */
+
+
+/* Acero */
+
+
+
+.grid_container_acero{
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    grid-template-areas: 
+    "header"
+    "mainacero"
+    "anillosacero"
+    "footer"
+
+    
+    
+    ;
+
+}
+
+.acero__container{
+    grid-area: mainacero;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: auto;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+}
+
+
+
+.categorias__acero img{
+    height: 500px;
+    width: 450px;
+    padding: 10px;
+}
+
+.anillos{
+    grid-area: anillosacero;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    grid-template-areas: 
+    "titulo titulo"
+    "anillos_acero anillos_acero"
+
+    
+    ;
+}
+
+
+
+.anillos__titulo{
+    grid-area: titulo;
+    background-color: antiquewhite;
+    padding: 20px;
+    text-align: center;
+}
+
+.anillos__acero a img{
+    height: 300px;
+}
+
+.anillos__acero{
+    grid-area: anillos_acero;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.anillos__item{
+    padding: 20px;
+    margin: -5px;
+}
+
+
+
+/* PLATA */
+
+
+/* PLATA */
+
+
+
+/*main plata*/
+
+
+.main__plata{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+
+        "plata1"
+        "plata2"
+
+    
+    ;
+}
+
+.plata1{
+    grid-area: plata1;
+}
+
+.banner__plata img{
+    width: 100%;
+    padding: 20px;
+}
+
+/* ORO */
+
+    .main__oro{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 0.5fr 1fr;
+        grid-template-areas: 
+            "introoro"
+            "orodata"
+            "destacado";
+    }
+
+
+
+   .intro__oro{
+
+        grid-area: introoro;
+   }
+
+   .banner__oro img{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+
+   }
+
+
+   /* .promo__plata h3{
+
+        font-weight: bold;
+        text-align: center;
+   } */
+
+   
+    /* CARD DE BOOTSTRAP APLICADO A TODOS */
+   
+    .card{
+    text-align: center;
+    
+   }
+
+   .col{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+   }
+    
+   /* CARD DE BOOTSTRAP APLICADO A TODOS */
+
+   .promo__oro{
+    text-align: center;
+    background-color: aliceblue;
+    padding: 20px;
+   }
+
+
+
+   .oro__data{
+    grid-area: orodata;
+    padding: 20px;
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    
+        "data carru"
+    ;
+    
+   }
+
+   .info__oro{
+    grid-area: data;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+    
+   }
+
+
+   .info__oro h3{
+    background-color: antiquewhite;
+    border-radius: 5px;
+    font-size: 25px;
+   }
+
+   .oro__carru{
+    grid-area: carru;
+   }
+
+
+   .carousel-item img{
+    height: 650px;
+   }
+
+   .desctacados__oro{
+        grid-area: destacado;
+   }
+
+
+
+   /* ACCESORIOS */
+
+   .main__accesorios{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 0.3fr 1fr 0.3fr;
+    grid-template-areas: 
+
+        "promo_accesorios "
+        "accesorios_oferta "
+        "encargo"
+        
+    
+  ;
+   }
+
+   .promo__accesorios{
+    grid-area: promo_accesorios;
+    display: grid;
+    justify-items: center;
+    margin: 20px;
+    background-color: azure;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr ;
+    grid-template-areas: 
+
+        "info-accesorios post-accesorios"
+        ;
+
+   }
+
+
+   .info_promo_accesorios{
+    grid-area: info-accesorios;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    padding: 20px;
+    
+   }
+
+
+
+
+
+
+   .info_promo_accesorios h3 a{
+    color: blueviolet;
+    background-color: wheat;
+    border-radius: 5px;
+    padding: 5px;
+    
+   }
+
+
+   .publi__accesorios{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    
+   }
+
+
+   .publi__accesorios img {
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+   }
+
+   .publi__accesorios img:hover{
+
+    transform: scale(1.1);
+   }
+
+   
+
+   .post__accesorios img{
+    grid-area: post-accesorios;
+    width: 250px;
+    width: 300px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 3px 2px 1px black;
+    transition: transform 0.3s ease;
+   }
+
+   .post__accesorios img:hover {
+    transform: scale(1.1); /* Agranda la imagen al 110% */
+  }
+
+
+  .accesorios__oferta{
+    grid-area: accesorios_oferta;
+    margin: 20px;
+
+  }
+  
+  .oferta__accesorios{
+    text-align: center;
+  }
+
+  .oferta__accesorios p{
+    color: brown;
+  }  
+
+  .oferta__accesorios h3{
+    font-weight: bold;
+  }
+
+
+  .encargo{
+    grid-area: encargo;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 0.3fr;
+    grid-template-areas: 
+        
+        "info__encargo"
+        "encargo"
+    
+    ;
+  }
+
+
+  .info__encargo{
+    grid-area: info__encargo;
+  }
+
+
+  .encargo__items{
+    grid-area: encargo;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    padding: 20px;
+    
+  }
+
+  .img__encargo{
+    text-align: center;
+    background-color:aliceblue;
+    border-radius: 10px;
+    
+    
+    
+  }
+
+ 
+
+  .img__encargo h5{
+    margin: 5px;
+    font-weight: bold;
+  }
+
+ .img__encargo img {
+    height: 300px;
+    width: 250px;
+    padding: 10px;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+}
+
+
+.img__encargo img:hover{
+
+    transform: scale(1.1);
+   }
+
+
+  .info__encargo{
+    text-align: center;
+    margin: 10px;
+  }
+
+   
+  
+  
+  .btn__accesorios{
+    margin: 10px;
+    background-color: black;  /* Fondo negro */
+      color: white;  /* Letra blanca */
+      border: none;  /* Sin borde */
+      padding: 10px 20px;  /* Espaciado interno */
+      font-size: 16px;  /* Tamaño de la letra */
+      border-radius: 10px;  /* Bordes ligeramente redondeados */
+      cursor: pointer;  /* Cambia el cursor al pasar por encima */
+      position: relative;  /* Necesario para el pseudo-elemento */
+      overflow: hidden;  /* Oculta el pseudo-elemento fuera del botón */
+      transition: color 0.3s ease;  /* Transición suave para el color de la letra */
+   }
+
+   .btn__accesorios:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  .btn__accesorios:hover {
+    color: yellow;  /* Cambia la letra a negro cuando se pasa el mouse */
+  }
+
+
+  
+
+
+
+      /* MEDIAQUERYS */
+
+      /* PANTALLAS Y TABLET */
+
+@media (max-width: 1200px){
+
+
+    /* NAVBAR */
+
+
+
+
+    /* main index */
+
+
+     .info__body{
+        background-color: white;
+        margin-top: 5px;
+        padding: 5px;
+    }
+    
+    
+    .container__info {
+        margin: 50px;
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-auto-rows: min-content;
+        grid-template-areas: 
+        "info1 info2"
+        "info3 info4"
+        
+        ;
+        
+    }
+
+    .info__img{
+        height: 60px;
+        margin: 10px;
+    }
+    
+    .info__item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border: 1px solid black;
+        border-radius: 5px;
+        box-shadow: 5px 5px 5px;
+        
+        
+        
+    }
+    
+    
+    .info__item a {
+        display: flex;
+        align-items: center;
+        color: black;
+        
+        font-weight: 900;
+    }
+    
+
+
+  
+
+    /* ACERO */
+
+    /* .acero__container{
+        grid-area: mainacero;
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+        justify-self: center;
+        align-self: center;
+        text-align: center;
+    } */
+
+
+    .categorias__acero img{
+        height: 400px;
+        width: 370px;
+        margin: 5px;
+    }
+    
+
+    .anillos__item img{
+        height: 200px;
+        width: 200px;
+    }
+
+
+
+    /* PLATA  MAX WIDTH */
+
+
+    /*MAIN PLATA*/
+
+    
+    
+
+    /* ACCESORIOS */
+
+    .encargo__items{
+        grid-area: encargo;
+        display: grid;
+        grid-template-columns: 0.5fr 0.5fr;
+        grid-template-rows: 1fr 1fr;}
+
+}
+
+
+
+/* TABLET */
+
+@media (max-width: 768px) {
+
+    /* header */
+
+    .header__info {
+        display: none;
+    }
+
+    .navbar__pro{
+        display: none;
+    }
+
+
+
+    /* info */
+
+
+
+  /* banner */
+
+ 
+    
+  .banner__container img{
+    display: none;
+}
+
+    /* ofertas */
+
+    .ofertas__body{
+        margin: 20px;
+        padding: 10px;
+        align-items: center;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: auto;
+        grid-template-areas: 
+        "ofertaimg ofertaimg"
+        "oferta1 oferta2"
+        "oferta3 oferta4"
+        
+        ;
+    
+    }
+
+
+
+    /* ACERO */
+
+
+    .categorias__acero img{
+        height: 350px;
+        width: 270px;
+        padding: 5px;
+        margin: 10px;
+    }
+    
+
+    .anillos__item img{
+        height: 100px;
+        width: 200px;
+    }
+
+
+
+    /* ORO */
+
+
+    .main__oro{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 0.5fr 0.5fr;
+        grid-template-areas: 
+            "introoro"
+            "orodata"
+            "destacado";
+    }
+
+
+
+
+
+    .oro__data{
+        grid-area: orodata;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 0.5fr;
+        grid-template-areas: 
+        
+            "carru"
+            "data"
+        ;
+        
+       }
+    
+       .info__oro{
+        grid-area: data;
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        padding: 20px;
+    
+        
+       }
+    
+    
+       .info__oro h3{
+        background-color: antiquewhite;
+        border-radius: 5px;
+        font-size: 20px;
+       }
+    
+        .oro__carru{
+            grid-area: carru;
+            
+       }
+    
+    
+       .carousel-item img{
+        width: 100%;
+        height: auto;
+       }
+
+       .intro__oro{
+        margin-top: 50px;
+       }
+    
+
+
+
+       /* ACCESORIOS */
+
+       .promo__accesorios{
+        grid-area: promo_accesorios;
+        display: grid;
+        justify-items: center;
+        margin: 20px;
+        background-color: azure;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 0.5fr;
+        grid-template-areas: 
+    
+            "info-accesorios"
+            
+            ;
+    
+       }
+
+       .post__accesorios{
+        display: none;
+       }
+
+       .promo__accesorios{
+        margin-top: 50px;
+       }
+
+
+}
+
+
+
+@media (min-width: 768px) {
+
+    /* header */
+
+    .navbar {
+        display: none;
+    }
+}
+
+
+
+/* TELEFONO */
+
+@media (max-width: 576px){
+
+    
+
+    /* info */
+
+    .container__info {
+        
+        display: none;
+        
+    }
+
+
+    .ofertas__item a img{
+        height: 300px;
+        width: 200px;
+        margin: 10px;
+        
+    }
+    
+
+    .ofertas__body{
+        margin: 20px;
+        padding: 10px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+        grid-template-areas: 
+        
+        "ofertaimg"
+        "oferta1"
+        "oferta2"
+        "oferta3"
+        "oferta4"
+        
+        
+        ;
+    
+    }
+
+
+
+    /* main acero */
+
+    .acero__container{
+        grid-area: mainacero;
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+        justify-self: center;
+        align-self: center;
+        text-align: center;
+    }
+
+
+    .categorias__acero img{
+        height: 400px;
+        width: 300px;
+        padding: 5px;
+    }
+    
+
+
+    .anillos{
+        grid-area: anillosacero;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+        grid-template-areas: 
+        "titulo"
+        "anillos_acero"
+    
+        
+        ;
+    }
+    
+
+    .anillos__acero{
+        grid-area: anillos_acero;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+
+    /* footer */
+
+    .footer__container{
+        background-color: black;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+        grid-template-areas: 
+            "redes"
+            "info" 
+            "copyr"   
+        ;
+    }
+
+
+    .redes__email{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        background-color: grey;
+        grid-area: redes;
+        
+    }
+
+
+    .info__footer{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding: 10px;
+        grid-area: info;
+    }
+
+
+
+     /* ORO */
+
+
+
+     .main__oro{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 0.5fr 0.5fr;
+        grid-template-areas: 
+            "introoro"
+            "orodata"
+            "destacado";
+    }
+
+     .oro__data{
+        grid-area: orodata;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 0.2fr;
+        grid-template-areas: 
+        
+            "carru"
+            "data"
+        ;
+        
+       }
+    
+       .info__oro{
+        grid-area: data;
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        padding: 20px;
+    
+        
+       }
+    
+    
+       .info__oro h3{
+        background-color: antiquewhite;
+        border-radius: 5px;
+        font-size: 20px;
+       }
+    
+        .oro__carru{
+            grid-area: carru;
+            
+            
+       }
+    
+    
+       .carousel-item img{
+        width: 100%;
+        height: auto;
+       }
+
+
+       .intro__oro{
+        margin-top: 50px;
+       }
+
+
+       /* ACCESORIOS */
+
+       .publi__accesorios{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        
+       }
+       
+    
+}

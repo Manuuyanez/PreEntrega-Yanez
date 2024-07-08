@@ -1,0 +1,683 @@
+.main_container{
+    grid-area: main;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    grid-template-areas:
+    
+    "banner"
+    "infobody"
+    "ofertabody"
+    
+    ;
+
+
+
+    .banner__container{
+        grid-area: banner;
+
+        @include mobile{
+            margin-top: 50px;
+        }
+
+        img{
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+    }
+
+
+    .info__body{
+        grid-area: infobody;
+        background-color: white;
+        margin-top: 5px;
+        padding: 5px;
+
+        .container__info {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-auto-rows: min-content;
+            grid-template-areas: 
+            "info1 info2 info3 info4"
+            ;
+
+            @include tablet{
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                grid-template-areas: 
+                
+                "info1 info2"
+                "info3 info4"
+
+                ;
+            }
+
+            @include mobile{
+                grid-template-columns: 0.5fr;
+                grid-template-rows: 1fr 1fr 1fr 1fr;
+                justify-content: center;
+                grid-template-areas: 
+                
+                "info1"
+                "info2"
+                "info3"
+                "info4"
+
+                ;
+            }
+            
+            .info__item{
+
+            border: 1px solid black;
+            border-radius: 5px;
+            box-shadow: 5px 5px 5px;
+            margin: 5px;
+
+
+            a {
+                display: flex;
+                align-items: center;
+                color: black;
+                margin: 10px;
+                font-weight: 900;
+            }
+             
+             .info1{
+                 grid-area: info1;
+             }
+             
+             .info2{
+                 grid-area: info2;
+             }
+             
+             .info3{
+                 grid-area: info3;
+             }
+             
+             .info4{
+                 grid-area: info4;
+             }
+ 
+             img{
+                 height: 60px;
+                 margin: 10px;
+             }
+
+           }
+        }
+            
+    }
+
+    .ofertas__body{
+        grid-area: ofertabody;
+        margin: 20px;
+        padding: 10px;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-auto-rows: auto;
+        grid-template-areas: 
+        "ofertaimg oferta1 oferta2 oferta3 oferta4"
+        ;
+
+        @include tablet{
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 0.5fr 0.5fr;
+            grid-template-areas: 
+            
+            "oferta1 oferta2"
+            "oferta3 oferta4"
+            ;
+        }
+
+        @include mobile{
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            justify-content: center;
+            grid-template-areas: 
+
+            "oferta1"
+            "oferta2"
+            "oferta3"
+            "oferta4"
+            ;
+        }
+            
+            
+
+
+
+
+        
+
+        .oferta__img img {
+            height: 300px;
+            grid-area: ofertaimg;
+
+            @include tablet{
+                display: none;
+            }
+
+            
+        }
+
+        .ofertas__item{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            a{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                color: black;
+                margin: 10px;
+                font-size: 20px;
+
+                img{
+                    height: 200px;
+                    margin: 10px;
+
+                    @include tablet{
+                        height: 300px;
+                    }
+                    
+                }
+            }
+
+            .ofertas__btn{
+                background-color: blue;
+                color: white;
+                margin: 10px;
+                padding: 10px;
+                border: none;
+                font-size: 1.5rem;
+                cursor: pointer;
+                border-radius: 5px;
+            }
+            
+        }
+
+        .oferta1{
+            grid-area: oferta1;
+        
+        }
+        
+        .oferta2{
+            grid-area: oferta2;
+            
+        }
+        
+        .oferta3{
+            
+            grid-area: oferta3;
+        }
+        
+        .oferta4{
+        
+            grid-area: oferta4;
+            
+        }
+
+        
+    
+    }
+        
+        
+    
+}
+
+
+
+// MAIN ACCESORIOS
+
+.main__accesorios{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 0.1fr 0.5 0.4fr;
+    grid-template-areas: 
+
+        "promo_accesorios "
+        "accesorios_oferta "
+        "encargo"
+    ;
+
+    @include mobile3{
+        margin-top: 30px;
+    }
+        
+    .promo__accesorios{
+        grid-area: promo_accesorios;
+        display: grid;
+        justify-items: center;
+        margin: 20px;
+        background-color: azure;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.5fr ;
+        grid-template-areas: 
+    
+            "info-accesorios post-accesorios"
+            ;
+
+            @include tablet{
+                grid-template-columns: auto;
+                grid-auto-rows: auto;
+                grid-template-areas: 
+                
+                    "info-accesorios"
+                ;
+            }
+
+
+
+
+            .info_promo_accesorios{
+                grid-area: info-accesorios;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-content: center;
+                text-align: center;
+                padding: 20px;
+
+    
+
+                h3 a{
+                    color: blueviolet;
+                    background-color: wheat;
+                    border-radius: 5px;
+                    padding: 5px;
+                    
+                }
+
+                .publi__accesorios{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-content: center;
+
+                    @include mobile3{
+                        display: flex;
+                        flex-direction: column;
+                    }
+
+    
+
+                    img {
+                        width: 300px;
+                        height: 300px;
+                        margin: 10px;
+                        border-radius: 10px;
+                        transition: transform 0.3s ease;
+                    }
+
+                    img:hover{
+
+                        transform: scale(1.1);
+                    }
+                }
+                    
+                
+            }
+
+            .post__accesorios{
+
+
+                @include tablet{
+                    display: none;
+                }
+
+                img{
+                    grid-area: post-accesorios;
+                    width: 250px;
+                    width: 300px;
+                    margin: 20px;
+                    border-radius: 10px;
+                    box-shadow: 1px 3px 2px 1px black;
+                    transition: transform 0.3s ease;
+                }
+    
+                    img:hover {
+                    transform: scale(1.1); 
+    
+                    }
+            
+    
+            }
+    }
+    
+    
+    .accesorios__oferta{
+        grid-area: accesorios_oferta;
+        text-align: center;
+        
+        .oferta__accesorios{
+            text-align: center;
+
+            p{
+                color: brown;
+            }  
+
+            h3{
+                font-weight: bold;
+            }
+
+          }
+
+         
+
+          .cards__accesorios{
+
+
+            @include tablet{
+                margin: 5px;
+            }
+
+            
+            @include mobile3{
+                margin: 5px;
+                margin-left: 100px;
+                justify-content: center;
+                align-items: center;
+
+            }
+
+            @include mobile{
+                margin-left: 60px;
+            }
+          }
+    }
+
+    .encargo{
+        grid-area: encargo;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.1fr 0.3fr;
+        grid-template-areas: 
+            
+            "info__encargo"
+            "encargo"
+        ;
+
+        .info__encargo{
+            grid-area: info__encargo;
+            text-align: center;
+            margin: 10px;
+        }
+
+        .img__encargo{
+            text-align: center;
+            background-color:aliceblue;
+            border-radius: 10px;
+
+            h5{
+                margin: 5px;
+                font-weight: bold;
+            }
+
+            img {
+                height: 300px;
+                width: 250px;
+                padding: 10px;
+                border-radius: 20px;
+                transition: transform 0.3s ease;
+            }
+            
+            img:hover{
+
+                transform: scale(1.1);
+            }
+
+            .btn__accesorios{
+                margin: 10px;
+                background-color: black;
+                  color: white;
+                  border: none;
+                  padding: 10px 20px;
+                  font-size: 16px; 
+                  border-radius: 10px; 
+                  cursor: pointer;  
+                  position: relative;  
+                  overflow: hidden;  
+                  transition: color 0.3s ease;  
+               }
+
+               .btn__accesorios:hover::before {
+                transform: translate(-50%, -50%) scale(1);
+              }
+            
+              .btn__accesorios:hover {
+                color: yellow;
+              }
+            
+
+        }
+    }
+
+}
+
+
+// MAIN ENCHAPADO ORO
+
+.main__oro{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr;
+    grid-template-areas: 
+        "introoro"
+        "orodata"
+        "destacado";
+
+        .intro__oro{
+            grid-area: introoro;
+
+            @include mobile3{
+                margin-top: 40px;
+            }
+
+            .banner__oro{
+
+                img{
+                    width: 100%;
+                    height: auto;
+                    padding: 20px;
+                }
+            }
+
+            .promo__oro{
+                text-align: center;
+                background-color: aliceblue;
+                padding: 20px;
+            }
+
+        }
+
+        .oro__data{
+            grid-area: orodata;
+            padding: 20px;
+            margin: 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto;
+            grid-template-areas: 
+            
+                "data carru"
+            ;
+
+            @include mobile3{
+                grid-template-columns: 1fr;
+                grid-template-areas: 
+                
+                "data"
+                "carru"
+                ;
+            }
+
+            @include mobile{
+                grid-template-areas: 
+                
+                "data"
+                ;
+
+
+            }
+
+            .info__oro{
+                grid-area: data;
+                display: flex;
+                flex-direction: column;
+                margin: 10px;
+                padding: 10px;
+
+                h3{
+                    background-color: antiquewhite;
+                    border-radius: 5px;
+                    font-size: 25px;
+                }
+                
+            }
+
+            .oro__carru{
+                grid-area: carru;
+
+                @include mobile{
+                    display: none;
+                }
+
+                .carousel-item{
+                    
+                    img{
+                        height: 600px;
+                    }
+                }
+            }
+            
+        }
+ 
+        .destacados__oro{
+            grid-area: destacado;
+            
+
+            .promo__oro{
+                text-align: center;
+                
+                
+            }
+
+            .container__promo__oro{
+                justify-content: center;
+
+                .row__oro{
+
+                    .card__oro{
+                        margin-top: 5px;
+                    }
+                }
+            }
+
+
+       }
+}
+
+
+// MAIN ACERO
+
+.acero__container{
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 0.3fr 1fr;
+    grid-template-areas: 
+    "categorias_acero"
+    "anillos"
+    
+    ;
+
+    @include mobile3{
+        margin-top: 30px;
+    }
+
+    .categorias_acero{
+        display: grid;
+        margin: 20px;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 1fr;
+        justify-items: center;
+        text-align: center;
+
+        @include mobile3{
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+        }
+        
+
+        .img__categorias__acero{
+            align-items: center;
+            margin: 5px;
+        
+
+            img{
+                height: 450px;
+                width: 350px;
+        
+
+            }
+        }
+        
+    }
+
+    .anillos{
+        grid-area: anillos;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: auto;
+        grid-template-areas: 
+        "titulo titulo"
+        "anillos_acero anillos_acero"
+        ;
+    
+        .anillos__titulo{
+            grid-area: titulo;
+            background-color: antiquewhite;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .anillos__acero{
+            grid-area: anillos_acero;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            @include mobile3{
+                flex-direction: column;
+            }
+
+            img{
+                height: 300px;
+            }
+
+            .anillos__item{
+                padding: 20px;
+                margin: -5px;
+
+                .btn__acero{
+                    background-color: blue;
+                    color: white;
+                    margin: 10px;
+                    padding: 10px;
+                    border: none;
+                    font-size: 1.5rem;
+                    cursor: pointer;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+
+}
